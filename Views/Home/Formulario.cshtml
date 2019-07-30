@@ -1,0 +1,81 @@
+﻿<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <title>Formulario</title>
+</head>
+<body>
+
+    <h1 class="text-center display-4">Formulário</h1>
+    <hr>
+    <div class="container-fluid">
+        <div class="row" >
+            <div class="col-6 offset-3">
+                <form method="post">
+                    <div class="form-group">
+                        <label for="Nome">Nome</label>
+                        <input type="text" class="form-control" id="Nome" name="Nome" placeholder="Nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input type="email" class="form-control" id="Email" name="Email" placeholder="Email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Senha">Senha</label>
+                        <input type="password" class="form-control" id="Senha" name="Senha" placeholder="Senha">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Data">Data</label>
+                        <input type="date" class="form-control" id="Data" name="Data" placeholder="Data">
+                    </div>
+                    <div class="form-group">
+                        <label for="Range">Range</label>
+                        <input type="range" min="0" max="99"  class="form-control-range" id="Range" name="Range">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="UF">Estado</label>
+                        <select class="form-control" id="UF">
+                            <option>MT</option>
+                            <option>MS</option>
+                            <option>SP</option>
+                            <option>RJ</option>
+                            <option>TO</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Foto">Foto</label>
+                        <input type="file" class="form-control-file" id="Foto">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Endereco">Endereco</label>
+                        <input type="text" class="form-control" id="Endereco" name="Endereco" placeholder="Endereço" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Numero">Número</label>
+                        <input type="number" min="10" max="99" class="form-control" id="Numero" name="Numero" placeholder="Número">
+                    </div>
+
+                    <section class="row justify-content-center mb-5">
+                        <input class="btn btn-lg btn-primary" type="submit" value="Cadastrar" />
+                    </section>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/twitter-bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
